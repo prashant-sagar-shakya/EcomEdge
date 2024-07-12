@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/": "https://ecomedge.onrender.com",
-      "/uploads/": "https://ecomedge.onrender.com",
+      "/api/": "http://localhost:5000",
+      "/uploads/": "https://localhost:5000",
     },
   },
 });
